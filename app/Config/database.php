@@ -111,11 +111,11 @@
                    
 	       endif;
 	       
-	       debug($this->default['host']);
-               debug($this->default['port']);
-               debug($this->default['login']);
-               debug($this->default['password']);
-               debug($this->default['database']);
+	       debug(getenv("OPENSHIFT_MYSQL_DB_HOST"));
+               debug(getenv("OPENSHIFT_MYSQL_DB_PORT"));
+               debug(getenv("OPENSHIFT_MYSQL_DB_USERNAME"));
+               debug(getenv("OPENSHIFT_MYSQL_DB_PASSWORD"));
+               debug(getenv("OPENSHIFT_APP_NAME"));
 	}
 }
 
