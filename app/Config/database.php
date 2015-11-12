@@ -110,6 +110,12 @@
 	           $this->default['database']   = "centremedicale";
                    
 	       endif;
+	       
+	       debug($this->default['host']);
+               debug($this->default['port']);
+               debug($this->default['login']);
+               debug($this->default['password']);
+               debug($this->default['database']);
 	}
 }
 
